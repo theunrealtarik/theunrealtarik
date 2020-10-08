@@ -1,16 +1,22 @@
-### Hi there 👋
+![enter image description here](https://cdn.discordapp.com/attachments/752089577434513449/763675763525812234/banner_croped.png)
+# About me?  😅
 
-<!--
-**Txreq/Txreq** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+My real name is "Tarek", I use **Txreq** as a nickname". I'm 15 years old and I live in Algeria, and what I do is playing video game like CS:GO or PUBG, and sometimes programming, drawing or designing.
+ 
+ 𝗦𝗼𝗺𝗲𝘁𝗵𝗶𝗻𝗴 𝗶 𝘄𝗮𝗻𝘁 𝘁𝗼 𝗹𝗲𝗮𝗿𝗻:
+ 
 
-Here are some ideas to get you started:
+ - Game developement 🎮
+ - Security 🔒
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+# Projects 📁
+
+Actually, I don't currently have huge projects. But, sometimes I create a small projects, either for public or private benefits. 
+>btw i'm working on a Discord Bot named [Botnite](link)
+
+# Links 🔗
+𝘚𝘰𝘮𝘦 𝘴𝘰𝘤𝘪𝘢𝘭𝘭 𝘮𝘦𝘥𝘪𝘢 𝘭𝘪𝘯𝘬𝘴
+[𝒀𝒐𝒖𝒕𝒖𝒃𝒆](https://www.youtube.com/channel/UCtTtjBQqLwTmPFW5KIk4cIg?view_as=subscriber)
+[𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌](https://www.facebook.com/rother.brock.14/)
+[𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎](https://www.instagram.com/its_txreq/)
