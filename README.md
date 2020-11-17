@@ -13,7 +13,7 @@ My real name is "Tarek", I use **Txreq** as a nickname". I'm 15 years old and I 
 # Projects 📁
 
 Actually, I don't currently have huge projects. But, sometimes I create a small projects, either for public or private benefits. 
->btw i'm working on a Discord Bot named [Botnite](link)
+> '-'
 
 # Links 🔗
 𝘚𝘰𝘮𝘦 𝘴𝘰𝘤𝘪𝘢𝘭𝘭 𝘮𝘦𝘥𝘪𝘢 𝘭𝘪𝘯𝘬𝘴
