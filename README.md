@@ -19,4 +19,4 @@ Actually, I don't currently have huge projects. But, sometimes I create a small 
 𝘚𝘰𝘮𝘦 𝘴𝘰𝘤𝘪𝘢𝘭𝘭 𝘮𝘦𝘥𝘪𝘢 𝘭𝘪𝘯𝘬𝘴
 [𝒀𝒐𝒖𝒕𝒖𝒃𝒆](https://www.youtube.com/channel/UCtTtjBQqLwTmPFW5KIk4cIg?view_as=subscriber)
 [𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌](https://www.facebook.com/rother.brock.14/)
-[𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎](https://www.instagram.com/its_txreq/)
+[𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎](https://www.instagram.com/mr.txreq/)
