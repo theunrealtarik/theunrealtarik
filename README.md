@@ -1,7 +1,7 @@
 ![enter image description here](https://cdn.discordapp.com/attachments/752089577434513449/763675763525812234/banner_croped.png)
 # About me?  😅
 
-My real name is "Tarek", I use **Txreq** as a nickname". I'm 15 years old and I live in Algeria, and what I do is playing video game like CS:GO or PUBG, and sometimes programming, drawing or designing.
+My real name is "Tarek", I use **Txreq** as a nickname". I'm 16 yo from Algeria, and what I do is playing video game like CS:GO or PUBG, and sometimes programming, drawing or designing.
  
  𝗦𝗼𝗺𝗲𝘁𝗵𝗶𝗻𝗴 𝗶 𝘄𝗮𝗻𝘁 𝘁𝗼 𝗹𝗲𝗮𝗿𝗻:
  
