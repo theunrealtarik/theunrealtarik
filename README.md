@@ -10,7 +10,7 @@ Actually, I don't currently have huge projects. But, sometimes I create a small 
 > Working on CSGO cheat :)
 <div>
  <a href="">
-  <img src="https://i.ibb.co/4VfGDcR/icon02.png">
+  <img width="64px" src="https://i.ibb.co/4VfGDcR/icon02.png">
  </a>
 </div>
 
