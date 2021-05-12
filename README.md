@@ -8,7 +8,6 @@ My real name is Tarik, I use **Txreq** as a nickname. I'm 16 yo from Algeria, I'
 Actually, I don't currently have huge projects. But, sometimes I create a small projects, either for public or private benefits. 
 <div>
  <h4>Some examples of projects that i have done before:</h4>
-
  <a href="https://dz-item-shop.glitch.me/">
   <img width="64px" src="https://i.ibb.co/4VfGDcR/icon02.png">
  </a>
@@ -16,8 +15,12 @@ Actually, I don't currently have huge projects. But, sometimes I create a small 
   <a href="https://dzstats.glitch.me/">
   <img width="64px" src="https://i.ibb.co/v1zcJ3Q/icon01.png">
  </a>
+ 
+ <a href="https://dzstats.glitch.me/">
+  <img width="64px" src="https://i.ibb.co/FkrPT7P/cpu.png">
+ </a>
 </div>
-
+> I can't show off a sold projects 💸
 # Links 🔗
 𝘚𝘰𝘮𝘦 𝘴𝘰𝘤𝘪𝘢𝘭𝘭 𝘮𝘦𝘥𝘪𝘢 𝘭𝘪𝘯𝘬𝘴
 [YouTube](https://www.youtube.com/channel/UCWMV8dD0N3tAM2W6GuNCUCg)
