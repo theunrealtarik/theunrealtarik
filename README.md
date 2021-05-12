@@ -9,8 +9,12 @@ My real name is "Tarek", I use **Txreq** as a nickname". I'm 16 yo from Algeria,
 Actually, I don't currently have huge projects. But, sometimes I create a small projects, either for public or private benefits. 
 > Working on CSGO cheat :)
 <div>
- <a href="">
+ <a href="https://dz-item-shop.glitch.me/">
   <img width="64px" src="https://i.ibb.co/4VfGDcR/icon02.png">
+ </a>
+ 
+  <a href="https://dzstats.glitch.me/">
+  <img width="64px" src="https://i.ibb.co/v1zcJ3Q/icon01.png">
  </a>
 </div>
 
