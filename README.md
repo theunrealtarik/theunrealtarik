@@ -20,7 +20,9 @@ Actually, I don't currently have huge projects. But, sometimes I create a small 
   <img width="64px" src="https://i.ibb.co/FkrPT7P/cpu.png">
  </a>
 </div>
+
 > I can't show off a sold projects 💸
+
 # Links 🔗
 𝘚𝘰𝘮𝘦 𝘴𝘰𝘤𝘪𝘢𝘭𝘭 𝘮𝘦𝘥𝘪𝘢 𝘭𝘪𝘯𝘬𝘴
 [YouTube](https://www.youtube.com/channel/UCWMV8dD0N3tAM2W6GuNCUCg)
