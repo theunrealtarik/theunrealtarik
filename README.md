@@ -19,6 +19,10 @@ Actually, I don't currently have huge projects. But, sometimes I create a small 
  <a href="https://tareq-dev.glitch.me/">
   <img width="64px" src="https://i.ibb.co/FkrPT7P/cpu.png">
  </a>
+ 
+  <a href="https://discordhook.netlify.app/">
+  <img width="64px" src="https://i.ibb.co/2PTM6dL/web-icon.png">
+ </a>
 </div>
 
 > I can't show off a sold projects 💸
