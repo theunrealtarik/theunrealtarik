@@ -1,7 +1,7 @@
 ![enter image description here](https://cdn.discordapp.com/attachments/752089577434513449/763675763525812234/banner_croped.png)
 # About me
 
-My real name is Tarik, I use **Txreq** as a nickname. I'm 16 yo from Algeria, I'm a mix of game & programmer & designer :3
+My real name is Tarik, I use **Txreq** as a nickname. I'm 16 yo from Algeria, I'm a mix of gamer & programmer & designer :3
  
 
 # Projects
