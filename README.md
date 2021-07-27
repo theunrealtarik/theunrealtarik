@@ -27,7 +27,7 @@
  </a>
  
 </div>
-<br />
+
 [YouTube](https://www.youtube.com/channel/UCWMV8dD0N3tAM2W6GuNCUCg)
 [Facebook](https://www.facebook.com/rother.brock.14/)
 [Instagram](https://www.instagram.com/mr.txreq/)
