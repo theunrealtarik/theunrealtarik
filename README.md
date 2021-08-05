@@ -9,10 +9,7 @@
   <a href="https://dzstats.glitch.me/">
   <img width="64px" src="https://i.ibb.co/v1zcJ3Q/icon01.png">
  </a>
- 
- <a href="https://tareq-dev.glitch.me/">
-  <img width="64px" src="https://i.ibb.co/FkrPT7P/cpu.png">
- </a>
+
  
   <a href="https://discordhook.netlify.app/">
   <img width="64px" src="https://i.ibb.co/2PTM6dL/web-icon.png">
