@@ -2,6 +2,7 @@
 <br />
 <div>
  <h4>Some examples of projects that i have done before:</h4>
+ 
  <a href="https://dz-item-shop.glitch.me/">
   <img width="64px" src="https://i.ibb.co/4VfGDcR/icon02.png">
  </a>
@@ -27,9 +28,13 @@
   <img width="64px" src="https://l.top4top.io/p_20432da9l1.png">
  </a>
  
-  <a href="https://covid-tracker-24.netlify.app/">
-  <img width="64px" src="https://j.top4top.io/p_20537q7ra1.png">
- </a>
+<a href="https://covid-tracker-24.netlify.app/">
+ <img width="64px" src="https://j.top4top.io/p_20537q7ra1.png">
+</a>
+ 
+<a href="https://angle-editor.netlify.app/">
+ <img width="64px" src="https://k.top4top.io/p_2067ljcu81.png">
+</a>
  
 </div>
 
