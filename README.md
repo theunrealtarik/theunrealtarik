@@ -13,5 +13,3 @@ If you maybe want to reach me through social media,
   <a href="https://twitter.com/txreqb2w" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="52" height="40" alt="twitter logo"  />
 </div>
-
-Check one of my latest apps, <a href="https://almad.vercel.app/">Almad</a> ✨
