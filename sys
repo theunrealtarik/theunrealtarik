@@ -1,7 +1,0 @@
-# arch config
-
-pacman -Sy base-devel xorg xorg-xinit xorg-xserver libx11 libinerma libxft webkit2gtk
-git clone https://git.suckless.org/dwm
-cd dwn && sudo make clean iinstall
-
-pacman -S dmenu
