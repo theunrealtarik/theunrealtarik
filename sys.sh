@@ -8,3 +8,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 brew install fzf duf bpytop
 
+git config --global credential.helper cache
