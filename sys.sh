@@ -1,5 +1,10 @@
-sudo pacman -Syu 
-sudo pacman -S xorg xorg-server xorg-xinit libx11
+sudo apt update
+sudo apt install firefox neovim zsh tmux
 
-# amd
-sudo pacman -S mesa xf86-video-amdgpu lib32-mesa vulkan-radeon amdvlk 
+chsh -s $(which zsh)
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew install fzf duf bpytop
+
