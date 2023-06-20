@@ -1,10 +1,15 @@
+source "$HOME/.cargo/env"
 
+export QT_STYLE_OVERRIDE=kvantum
+export PATH=$PATH:/usr/local/go/bin
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
 alias myip="curl http://ipecho.net/plain; echo"
 alias redurl="echo https://localhost:3000/api/auth/callback/[AUTH_PROVIDER_NAME]"
+alias shttp="python3 -m http.server"
+
 plugins=(
   git
   zsh-syntax-highlighting
