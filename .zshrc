@@ -24,5 +24,8 @@ export NVM_DIR="$HOME/.nvm"
 (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/tarik/.zprofile
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
+alias dotconfig='git --git-dir=$HOME/dotfiles --work-tree=$HOME'
+alias tor-browser="$HOME/.programs/tor-browser/start-tor-browser.desktop &"
+
 nvm use node
 clear
