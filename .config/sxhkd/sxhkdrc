@@ -9,7 +9,7 @@ ctrl + alt + {t,Delete}
 
 # program launcher
 super + @space
-	rofi -show run
+	sh ~/.config/polybar/scripts/launcher.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -123,3 +123,4 @@ super + {Left,Down,Up,Right}
 
 ctrl + alt + Right
 	flameshot gui
+  

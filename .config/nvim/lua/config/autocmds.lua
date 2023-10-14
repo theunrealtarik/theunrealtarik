@@ -6,3 +6,8 @@ require('vscode').setup({
   italic_comments = true,
 })
 require('vscode').load()
+
+
+require("notify").setup({
+  background_colour = "#000000",
+})
