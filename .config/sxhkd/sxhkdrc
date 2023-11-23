@@ -123,4 +123,6 @@ super + {Left,Down,Up,Right}
 
 ctrl + alt + Right
 	flameshot gui
-  
+ 
+Home
+  sh ~/.config/polybar/scripts/powermenu.sh &
