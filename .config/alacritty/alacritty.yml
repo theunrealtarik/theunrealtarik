@@ -36,8 +36,8 @@ window:
     y: 10
 
 font:
-  size: 11
+  size: 12
   normal:
-    family: 'Hack Nerd Font'
+    family: 'CaskaydiaMonoNerdFont'
     style: Regular
 theme: Hyper
