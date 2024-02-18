@@ -1,1 +1,1 @@
-boo .. 👻
+open source is active communism
