@@ -1,0 +1,3 @@
+# nvim go prrr
+
+prrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr

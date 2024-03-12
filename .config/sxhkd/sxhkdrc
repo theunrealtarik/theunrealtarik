@@ -126,3 +126,7 @@ ctrl + alt + Right
  
 Home
   sh ~/.config/polybar/scripts/powermenu.sh &
+
+# emoji picker
+super + right 
+  emoji-picker 

@@ -4,9 +4,6 @@ local M = {}
 
 M.general = {
   i = {
-    --
-    -- ["<C-_>"] = { "<cmd> gc <CR>", "" },
-    -- ["<C-a>"] = { "<cmd> ggVG <CR>", "" },
     -- go to  beginning and end
     ["<C-b>"] = { "<ESC>^i", "Beginning of line" },
     ["<C-e>"] = { "<End>", "End of line" },
@@ -19,8 +16,48 @@ M.general = {
   },
 
   n = {
-    ["<leader>re"] = { "<cmd>:RustEnableInlayHints <CR>", "Enable inlay hints" },
-    ["<leader>rd"] = { "<cmd>:RustDisableInlayHints <CR>", "Diable inlay hints" },
+    ["<C-b>"] = { "<ESC>^", "Beginning of line" },
+    ["<C-e>"] = { "<End>", "End of line" },
+
+    -- debuggin
+    ["<leader>db"] = { "<cmd> DapToggleBreakpoint <CR>", "Toggle breakpoint" },
+    ["<leader>du"] = {
+      function()
+        local widgets = require "dapi.ui.widgets"
+        local sidebar = widgets.sidebar(widgets.scopes)
+        sidebar.open()
+      end,
+      "Opens debugging sidebar",
+    },
+    --
+    -- ["<leader>lV"] = { "<cmd>:DiagnosticsToggleVirtualText <CR>", "Diagnostics Toggle Virtual Text" },
+    -- ["<leader>lT"] = { "<cmd>:DiagnosticsToggle <CR>", "Diagnostics Toggle" },
+
+    ["<leader>lV"] = {
+      function()
+        local current_value = vim.diagnostic.config().virtual_text
+        if current_value then
+          vim.diagnostic.config { virtual_text = false }
+        else
+          vim.diagnostic.config { virtual_text = true }
+        end
+      end,
+      "Diagnostics Toggle Virtual Text",
+    },
+    ["<leader>lT"] = {
+      function()
+        local current_value = vim.diagnostic.is_disabled()
+        if current_value then
+          vim.diagnostic.enable()
+        else
+          vim.diagnostic.disable()
+        end
+      end,
+      "Diagnostics Toggle",
+    },
+
+    -- ["<leader>re"] = { "<cmd>:RustEnableInlayHints <CR>", "Enable inlay hints" },
+    -- ["<leader>rd"] = { "<cmd>:RustDisableInlayHints <CR>", "Diable inlay hints" },
     ["<C-z>"] = { "<cmd> :u <CR>", "Undo" },
     ["<Esc>"] = { "<cmd> noh <CR>", "Clear highlights" },
     -- switch between windows
@@ -55,9 +92,9 @@ M.general = {
     ["<leader>b"] = { "<cmd> enew <CR>", "New buffer" },
     ["<leader>ch"] = { "<cmd> NvCheatsheet <CR>", "Mapping cheatsheet" },
 
-    ["<leader>fm"] = {
+    ["<leader>lfm"] = {
       function()
-        vim.lsp.buf.format { async = true }
+        vim.lsp.buf.format { async = false }
       end,
       "LSP formatting",
     },

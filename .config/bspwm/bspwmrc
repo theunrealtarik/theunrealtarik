@@ -6,7 +6,7 @@ bspc monitor DisplayPort-2 -d 1 2 3 4 5
 bspc monitor HDMI-A-0 -d 6 7 8 9
 
 bspc config border_width 1
-bspc config window_gap 2
+bspc config window_gap 0
 
 bspc config split_ratio 0.52
 bspc config borderless_monocle true
@@ -24,6 +24,7 @@ flameshot &
 sxhkd &
 picom &
 nitrogen --restore &
+emote &
 
 PDIR="$HOME/.config/polybar"
 

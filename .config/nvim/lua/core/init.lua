@@ -2,6 +2,10 @@ local opt = vim.opt
 local g = vim.g
 local config = require("core.utils").load_config()
 
+-- vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+--   underline = false,
+-- })
+
 -------------------------------------- globals -----------------------------------------
 g.nvchad_theme = config.ui.theme
 g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
@@ -32,7 +36,6 @@ opt.number = true
 opt.numberwidth = 2
 opt.ruler = false
 opt.relativenumber = true
-
 
 -- disable nvim intro
 opt.shortmess:append "sI"
@@ -112,11 +115,10 @@ autocmd("BufWritePost", {
 -- commands
 local new_cmd = vim.api.nvim_create_user_command
 new_cmd("NvChadUpdate", function()
-  require "nvchad.updater" ()
+  require "nvchad.updater"()
 end, {})
 
--- padding
-
+vim.api.nvim_command "set clipboard+=unnamedplus"
 -- function Sad(line_nr, from, to, fname)
 --   vim.cmd(string.format("silent !sed -i '%ss/%s/%s/' %s", line_nr, from, to, fname))
 -- end
