@@ -23,7 +23,7 @@ white = "#d0d0d0"
 yellow = "#feff00"
 
 [colors.primary]
-background = "#212328"
+background = "#1E1E1E"
 foreground = "#ffffff"
 
 [font]
