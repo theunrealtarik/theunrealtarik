@@ -1,3 +1,3 @@
 # halo
 
-![lol](https://c.tenor.com/ZIwQnXr5OPYAAAAC/tenor.gif)
+[lol](https://c.tenor.com/ZIwQnXr5OPYAAAAC/tenor.gif)

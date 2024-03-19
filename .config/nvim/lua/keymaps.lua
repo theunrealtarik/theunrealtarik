@@ -6,7 +6,14 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+
+-- vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+vim.keymap.set('n', '<leader>qd', '<cmd>TroubleToggle document_diagnostics<CR>',
+  { desc = 'Open diagnostic [D]ocument [Q]uickfix list' })
+
+vim.keymap.set('n', '<leader>qw', '<cmd>TroubleToggle workspace_diagnostics<CR>',
+  { desc = 'Open diagnostic [W]workspace [Q]uickfix list' })
+
 
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
@@ -41,18 +48,17 @@ local function toggle_diagnostics(vt)
   end
 end
 
-vim.keymap.set('n', "<leader>lV", function()
+vim.keymap.set('n', '<leader>lV', function()
   toggle_diagnostics(true)
-end, { desc = "[D]iagnostics Toggle [V]irtual [T]ext" })
+end, { desc = '[D]iagnostics Toggle [V]irtual [T]ext' })
 
-vim.keymap.set('n', "<leader>lT", function()
+vim.keymap.set('n', '<leader>lT', function()
   toggle_diagnostics(false)
-end, { desc = "[D]iagnostics [T]oggle" })
-
+end, { desc = '[D]iagnostics [T]oggle' })
 
 vim.keymap.set('n', '<leader>lfm', function()
   vim.lsp.buf.format { async = false }
-end, { desc = "[L]sp [F]or[m]atting" })
+end, { desc = '[L]sp [F]or[m]atting' })
 
 -- end beginning
 vim.keymap.set('n', '<C-b>', '<ESC>^i', { desc = 'End of line' })
@@ -61,10 +67,13 @@ vim.keymap.set('n', '<C-e>', '<End>', { desc = 'Move focus to the upper window' 
 vim.keymap.set('i', '<C-b>', '<ESC>^i', { desc = 'End of line' })
 vim.keymap.set('i', '<C-e>', '<End>', { desc = 'Move focus to the upper window' })
 
+vim.keymap.set('v', '<C-b>', '<ESC>^i', { desc = 'End of line' })
+vim.keymap.set('v', '<C-e>', '<End>', { desc = 'Move focus to the upper window' })
+
 -- comments
 vim.keymap.set('n', '<leader>/', function()
-  require("Comment.api").toggle.linewise.current()
-end, { desc = "Toggle Comment" })
+  require('Comment.api').toggle.linewise.current()
+end, { desc = 'Toggle Comment' })
 
 -- telescope
 local builtin = require 'telescope.builtin'
@@ -82,5 +91,7 @@ if builtin ~= nil then
   vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = '[ ] Find existing buffers' })
 end
 
-
 vim.keymap.set('n', '<C-q>', '<cmd>q!<CR>', { desc = '[Q]uit' })
+
+-- tree
+vim.keymap.set('n', '<leader>tt', '<cmd>NvimTreeToggle<CR>', { desc = '[T]ree [T]oggle' })

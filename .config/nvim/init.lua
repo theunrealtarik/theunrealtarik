@@ -22,9 +22,9 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt.hlsearch = true
 vim.opt.relativenumber = true
-
-vim.api.nvim_command 'highlight LineNr guifg=red'
-
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+vim.opt.termguicolors = true
 -- auto cmds
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
@@ -156,7 +156,7 @@ require('lazy').setup({
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
     opts = {
-      ensure_installed = { 'bash', 'c', 'html', 'lua', 'markdown', 'vim', 'vimdoc' },
+      ensure_installed = { 'bash', 'c', 'html', 'lua', 'markdown', 'vim', 'vimdoc', 'rust' },
       auto_install = true,
       highlight = {
         enable = true,
@@ -166,10 +166,17 @@ require('lazy').setup({
     },
     config = function(_, opts)
       ---@diagnostic disable-next-line: missing-fields
+      require('nvim-treesitter.install').prefer_git = true
       require('nvim-treesitter.configs').setup(opts)
     end,
   },
-
+  {
+    'nvim-tree/nvim-tree.lua',
+    config = function()
+      require('nvim-tree').setup()
+    end,
+    dependencies = { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font }
+  },
   { import = 'plugins' },
 }, {
   ui = {
