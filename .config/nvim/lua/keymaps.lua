@@ -7,13 +7,9 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
 
--- vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
-vim.keymap.set('n', '<leader>qd', '<cmd>TroubleToggle document_diagnostics<CR>',
-  { desc = 'Open diagnostic [D]ocument [Q]uickfix list' })
-
-vim.keymap.set('n', '<leader>qw', '<cmd>TroubleToggle workspace_diagnostics<CR>',
-  { desc = 'Open diagnostic [W]workspace [Q]uickfix list' })
-
+vim.keymap.set('n', '<leader>ft', '<cmd>NvimTreeFocus<CR>', { desc = '[F]ocus On [T]ree' })
+vim.keymap.set('n', '<leader>qd', '<cmd>TroubleToggle document_diagnostics<CR>', { desc = 'Open diagnostic [D]ocument [Q]uickfix list' })
+vim.keymap.set('n', '<leader>qw', '<cmd>TroubleToggle workspace_diagnostics<CR>', { desc = 'Open diagnostic [W]workspace [Q]uickfix list' })
 
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
