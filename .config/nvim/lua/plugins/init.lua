@@ -1,30 +1,25 @@
 return {
-  {
-    'Mofiqul/vscode.nvim',
-    config = function()
-      local c = require('vscode.colors').get_colors()
-      local vscode = require 'vscode'
-      vscode.setup {
-        transparent = true,
-        italic_comments = true,
-        underline_links = true,
-        disable_nvimtree_bg = true,
-        color_overrides = {
-          vscLineNumber = '#FFFFFF',
-        },
-
-        group_overrides = {
-          Cursor = { fg = c.vscDarkBlue, bg = c.vscLightGreen, bold = true },
-        },
-      }
-      vscode.load()
-    end,
-  },
+  { 'numToStr/Comment.nvim', opts = {}, lazy = false },
   {
     'windwp/nvim-autopairs',
     event = 'InsertEnter',
     config = true,
     -- use opts = {} for passing setup options
     -- this is equalent to setup({}) function
+  },
+  {
+    'saecki/crates.nvim',
+    event = { 'BufRead Cargo.toml' },
+    tag = 'stable',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    config = function()
+      require('crates').setup()
+    end,
+  },
+  {
+    'andweeb/presence.nvim',
+    config = function()
+      require('presence').setup {}
+    end,
   },
 }
