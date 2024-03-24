@@ -77,18 +77,18 @@ return {
     end,
   },
   {
-    "mrcjkb/rustaceanvim",
-    version = "^3",
+    'mrcjkb/rustaceanvim',
+    version = '^3',
     dependencies = {
-      "neovim/nvim-lspconfig",
-      "nvim-lua/plenary.nvim",
-      "mfussenegger/nvim-dap",
+      'neovim/nvim-lspconfig',
+      'nvim-lua/plenary.nvim',
+      'mfussenegger/nvim-dap',
       {
-        "lvimuser/lsp-inlayhints.nvim",
+        'lvimuser/lsp-inlayhints.nvim',
         opts = {},
       },
     },
-    ft = "rust",
+    ft = 'rust',
     config = function()
       vim.g.rustaceanvim = {
         tools = {
@@ -99,7 +99,7 @@ return {
         },
         server = {
           settings = {
-            ["rust-analyzer"] = {
+            ['rust-analyzer'] = {
               diagnostics = {
                 enable = false,
               },
@@ -110,12 +110,12 @@ return {
     end,
   },
   {
-    "saecki/crates.nvim",
-    event = { "BufRead Cargo.toml" },
-    tag = "stable",
-    dependencies = { "nvim-lua/plenary.nvim" },
+    'saecki/crates.nvim',
+    event = { 'BufRead Cargo.toml' },
+    tag = 'stable',
+    dependencies = { 'nvim-lua/plenary.nvim' },
     config = function()
-      require("crates").setup()
+      require('crates').setup()
     end,
   },
 }

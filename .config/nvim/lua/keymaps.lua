@@ -20,6 +20,36 @@ vim.keymap.set('n', 'K', function()
   vim.lsp.buf.hover()
 end, { desc = 'LSP Hover' })
 
+-- diagnostic
+local function toggle_diagnostics(vt)
+  local diagnostic = vim.diagnostic
+
+  if vt then
+    local v = diagnostic.config().virtual_text
+    if v then
+      vim.diagnostic.config { virtual_text = false }
+    else
+      vim.diagnostic.config { virtual_text = true }
+    end
+  else
+    local v = diagnostic.is_disabled()
+    if v then
+      vim.diagnostic.enable()
+    else
+      vim.diagnostic.disable()
+    end
+  end
+end
+
+vim.keymap.set('n', "<leader>lV", function()
+  toggle_diagnostics(true)
+end, { desc = "[D]iagnostics Toggle [V]irtual [T]ext" })
+
+vim.keymap.set('n', "<leader>lT", function()
+  toggle_diagnostics(false)
+end, { desc = "[D]iagnostics [T]oggle" })
+
+
 vim.keymap.set('n', '<leader>lfm', function()
   vim.lsp.buf.format { async = false }
 end, { desc = "[L]sp [F]or[m]atting" })
@@ -54,21 +84,3 @@ end
 
 
 vim.keymap.set('n', '<C-q>', '<cmd>q!<CR>', { desc = '[Q]uit' })
-
--- diagnostic
-local function toggle_diagnostics(virtual_text)
-  local current_value = vim.diagnostic.config().virtual_text
-  if current_value then
-    vim.diagnostic.config { virtual_text }
-  else
-    vim.diagnostic.config { virtual_text }
-  end
-end
-
-vim.keymap.set('n', "<leader>lV", function()
-  toggle_diagnostics(true)
-end, { desc = "[D]iagnostics Toggle [V]irtual [T]ext" })
-
-vim.keymap.set('n', "<leader>lT", function()
-  toggle_diagnostics(false)
-end, { desc = "[D]iagnostics [T]oggle" })
