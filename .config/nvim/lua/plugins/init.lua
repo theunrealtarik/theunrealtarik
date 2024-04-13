@@ -16,7 +16,7 @@ return {
       end
     end,
   },
-  { 'numToStr/Comment.nvim',    opts = {},          lazy = false },
+  { 'numToStr/Comment.nvim', opts = {}, lazy = false },
   {
     'windwp/nvim-autopairs',
     event = 'InsertEnter',
@@ -48,12 +48,22 @@ return {
     end,
   },
   {
-    "folke/trouble.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
+    'folke/trouble.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
     opts = {
       -- your configuration comes here
       -- or leave it empty to use the default settings
       -- refer to the configuration section below
     },
-  }
+    {
+      'ThePrimeagen/harpoon',
+      branch = 'harpoon2',
+      dependencies = { 'nvim-lua/plenary.nvim' },
+      config = function()
+        local harpoon = require 'harpoon'
+
+        harpoon:setup()
+      end,
+    },
+  },
 }

@@ -91,3 +91,33 @@ vim.keymap.set('n', '<C-q>', '<cmd>q!<CR>', { desc = '[Q]uit' })
 
 -- tree
 vim.keymap.set('n', '<leader>tt', '<cmd>NvimTreeToggle<CR>', { desc = '[T]ree [T]oggle' })
+
+-- harpoon
+local harpoon = require 'harpoon'
+
+if harpoon ~= nil then
+  vim.keymap.set('n', '<leader>a', function()
+    harpoon:list():add()
+  end)
+  vim.keymap.set('n', '<C-l>', function()
+    harpoon.ui:toggle_quick_menu(harpoon:list())
+  end)
+
+  vim.keymap.set('n', '<C-h>', function()
+    harpoon:list():select(1)
+  end, { desc = 'Select item 1' })
+
+  vim.keymap.set('n', '<C-t>', function()
+    harpoon:list():select(2)
+  end, { desc = 'Select item 2' })
+  vim.keymap.set('n', '<C-n>', function()
+    harpoon:list():select(3)
+  end, { desc = 'Select item 3' })
+
+  vim.keymap.set('n', '<leader>hp', function()
+    harpoon:list():prev()
+  end, { desc = '[H]arpoon [P]revious' })
+  vim.keymap.set('n', '<leader>hn', function()
+    harpoon:list():next()
+  end, { desc = '[H]arpoon [N]next' })
+end

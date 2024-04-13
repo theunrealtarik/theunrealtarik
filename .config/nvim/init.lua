@@ -85,7 +85,7 @@ require('lazy').setup({
         end,
       },
       { 'nvim-telescope/telescope-ui-select.nvim' },
-      { 'nvim-tree/nvim-web-devicons',            enabled = vim.g.have_nerd_font },
+      { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
     },
     config = function()
       require('telescope').setup {
@@ -175,7 +175,7 @@ require('lazy').setup({
     config = function()
       require('nvim-tree').setup()
     end,
-    dependencies = { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font }
+    dependencies = { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
   },
   { import = 'plugins' },
 }, {
