@@ -11,3 +11,7 @@ end, { desc = "Open project' Cargo.toml file" })
 vim.keymap.set('n', '<leader>od', function()
   vim.cmd.RustLsp 'openDocs'
 end, { desc = 'Open docs.rs' })
+
+vim.keymap.set('n', '<leader>jl', function()
+  vim.cmd.RustLsp 'joinLines'
+end, { desc = 'Join lines' })

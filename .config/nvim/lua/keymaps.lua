@@ -71,8 +71,7 @@ vim.keymap.set('n', '<leader>/', function()
   require('Comment.api').toggle.linewise.current()
 end, { desc = 'Toggle Comment' })
 
-vim.keymap.set('n', '<C-q>', '<cmd>q!<CR>', { desc = '[Q]uit' })
+vim.keymap.set('n', '<C-Q>', '<cmd>q!<CR>', { desc = '[Q]uit' })
 
 -- tree
 vim.keymap.set('n', '<leader>tt', '<cmd>NvimTreeToggle<CR>', { desc = '[T]ree [T]oggle' })
-
