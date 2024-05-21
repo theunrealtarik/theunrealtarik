@@ -71,54 +71,8 @@ vim.keymap.set('n', '<leader>/', function()
   require('Comment.api').toggle.linewise.current()
 end, { desc = 'Toggle Comment' })
 
--- telescope
-local builtin = require 'telescope.builtin'
-
-if builtin ~= nil then
-  vim.keymap.set('n', '<C-p>', builtin.find_files, { desc = 'Search Files' })
-  vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
-  vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
-  vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
-  vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
-  vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
-  vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
-  vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = '[S]earch [R]esume' })
-  vim.keymap.set('n', '<leader>s.', builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
-  vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = '[ ] Find existing buffers' })
-end
-
 vim.keymap.set('n', '<C-q>', '<cmd>q!<CR>', { desc = '[Q]uit' })
 
 -- tree
 vim.keymap.set('n', '<leader>tt', '<cmd>NvimTreeToggle<CR>', { desc = '[T]ree [T]oggle' })
 
--- harpoon
-local harpoon = require 'harpoon'
-
-if harpoon ~= nil then
-  vim.keymap.set('n', '<leader>a', function()
-    harpoon:list():add()
-  end)
-  vim.keymap.set('n', '<leader>hm', function()
-    harpoon.ui:toggle_quick_menu(harpoon:list())
-  end, { desc = '[H]arpoon [M]enu' })
-
-  vim.keymap.set('n', '<leader>h1', function()
-    harpoon:list():select(1)
-  end, { desc = 'Select item 1' })
-
-  vim.keymap.set('n', '<leader>h2', function()
-    harpoon:list():select(1)
-  end, { desc = 'Select item 1' })
-
-  vim.keymap.set('n', '<leader>h3', function()
-    harpoon:list():select(1)
-  end, { desc = 'Select item 1' })
-
-  vim.keymap.set('n', '<leader>hp', function()
-    harpoon:list():prev()
-  end, { desc = '[H]arpoon [P]revious' })
-  vim.keymap.set('n', '<leader>hn', function()
-    harpoon:list():next()
-  end, { desc = '[H]arpoon [N]next' })
-end

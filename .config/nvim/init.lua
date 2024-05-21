@@ -28,9 +28,6 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
--- lsp???
-vim.lsp.inlay_hint.enable(true, {})
-
 -- auto cmds
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
