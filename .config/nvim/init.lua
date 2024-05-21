@@ -1,3 +1,5 @@
+vim.deprecate = function() end
+
 -- basic setup
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -25,6 +27,10 @@ vim.opt.relativenumber = true
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
+
+-- lsp???
+vim.lsp.inlay_hint.enable(true, {})
+
 -- auto cmds
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
@@ -70,6 +76,7 @@ require('lazy').setup({
         ['<leader>w'] = { name = '[W]orkspace', _ = 'which_key_ignore' },
         ['<leader>h'] = { name = '[H]arpoon', _ = 'which_key_ignore' },
         ['<leader>t'] = { name = '[T]ree', _ = 'which_key_ignore' },
+        ['<leader>l'] = { name = '[L]sp', _ = 'which_key_ignore' },
       }
     end,
   },
@@ -158,7 +165,7 @@ require('lazy').setup({
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
     opts = {
-      ensure_installed = { 'bash', 'c', 'html', 'lua', 'markdown', 'vim', 'vimdoc', 'rust' },
+      ensure_installed = { 'bash', 'vim', 'vimdoc' },
       auto_install = true,
       highlight = {
         enable = true,
@@ -168,8 +175,8 @@ require('lazy').setup({
     },
     config = function(_, opts)
       ---@diagnostic disable-next-line: missing-fields
-      require('nvim-treesitter.install').prefer_git = true
       require('nvim-treesitter.configs').setup(opts)
+      require('nvim-treesitter.install').prefer_git = true
     end,
   },
   {

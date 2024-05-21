@@ -35,11 +35,11 @@ local function toggle_diagnostics(vt)
       vim.diagnostic.config { virtual_text = true }
     end
   else
-    local v = diagnostic.is_disabled()
+    local v = diagnostic.is_enabled()
     if v then
       vim.diagnostic.enable()
     else
-      vim.diagnostic.disable()
+      vim.diagnostic.enable()
     end
   end
 end

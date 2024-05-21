@@ -47,8 +47,6 @@ return {
       require('lspconfig').gdscript.setup(capabilities)
 
       local servers = {
-        clangd = {},
-        rust_analyzer = {},
         lua_ls = {
           settings = {
             Lua = {
@@ -85,36 +83,9 @@ return {
   },
   {
     'mrcjkb/rustaceanvim',
-    version = '^3',
-    dependencies = {
-      'neovim/nvim-lspconfig',
-      'nvim-lua/plenary.nvim',
-      'mfussenegger/nvim-dap',
-      {
-        'lvimuser/lsp-inlayhints.nvim',
-        opts = {},
-      },
-    },
+    version = '^4',
+    lazy = false,
     ft = 'rust',
-    config = function()
-      vim.g.rustaceanvim = {
-        tools = {
-          inlay_hints = {
-            auto = true,
-            only_current_line = true,
-          },
-        },
-        server = {
-          settings = {
-            ['rust-analyzer'] = {
-              diagnostics = {
-                enable = false,
-              },
-            },
-          },
-        },
-      }
-    end,
   },
   {
     'saecki/crates.nvim',
