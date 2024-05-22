@@ -13,11 +13,11 @@ end, { desc = 'Select item 1' })
 
 vim.keymap.set('n', '<leader>h2', function()
   harpoon:list():select(1)
-end, { desc = 'Select item 1' })
+end, { desc = 'Select item 2' })
 
 vim.keymap.set('n', '<leader>h3', function()
   harpoon:list():select(1)
-end, { desc = 'Select item 1' })
+end, { desc = 'Select item 3' })
 
 vim.keymap.set('n', '<leader>hp', function()
   harpoon:list():prev()
