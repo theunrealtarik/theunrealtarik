@@ -80,11 +80,8 @@ return {
   {
     'folke/trouble.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    },
+    cmd = 'Trouble',
+    opts = {},
     {
       'ThePrimeagen/harpoon',
       branch = 'harpoon2',
@@ -95,5 +92,30 @@ return {
         harpoon:setup()
       end,
     },
+  },
+  {
+    'KronsyC/nvim-license',
+    opts = function()
+      return {
+        name = 'YOUR_USERNAME',
+        -- Optional
+        -- year = "2023"
+      }
+    end,
+
+    cmd = {
+      'License',
+      'LicenseHeader',
+      'AutoLicense',
+    },
+    dependencies = {
+      { 'numToStr/Comment.nvim' },
+    },
+  },
+  {
+    'vyfor/cord.nvim',
+    build = '.\\build',
+    event = 'VeryLazy',
+    opts = {},
   },
 }

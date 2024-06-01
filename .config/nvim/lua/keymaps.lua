@@ -56,7 +56,6 @@ vim.keymap.set('n', '<leader>lfm', function()
   vim.lsp.buf.format { async = false }
 end, { desc = '[L]sp [F]or[m]atting' })
 
--- end beginning
 vim.keymap.set('n', '<C-b>', '<ESC>^i', { desc = 'End of line' })
 vim.keymap.set('n', '<C-e>', '<End>', { desc = 'Move focus to the upper window' })
 
@@ -66,12 +65,13 @@ vim.keymap.set('i', '<C-e>', '<End>', { desc = 'Move focus to the upper window' 
 vim.keymap.set('v', '<C-b>', '<ESC>^i', { desc = 'End of line' })
 vim.keymap.set('v', '<C-e>', '<End>', { desc = 'Move focus to the upper window' })
 
--- comments
 vim.keymap.set('n', '<leader>/', function()
   require('Comment.api').toggle.linewise.current()
 end, { desc = 'Toggle Comment' })
 
 vim.keymap.set('n', '<C-Q>', '<cmd>q!<CR>', { desc = '[Q]uit' })
-
--- tree
 vim.keymap.set('n', '<leader>tt', '<cmd>NvimTreeToggle<CR>', { desc = '[T]ree [T]oggle' })
+vim.keymap.set('n', '<leader>ih', function()
+  local is_enabled = vim.lsp.inlay_hint.is_enabled {}
+  vim.lsp.inlay_hint.enable(not is_enabled)
+end, { desc = 'Toggle LSP Inlay Hints' })
